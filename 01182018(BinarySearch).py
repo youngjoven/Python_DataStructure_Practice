@@ -35,3 +35,30 @@ test_list = [0,1,2,8,13,17,19,32,42]
 
 print(binary_search(test_list,3))
 print(binary_search(test_list,13))
+
+
+
+
+
+
+#binary search with recursion
+ def binsearch(low,high,key):
+        if (l==h):
+            if A[low==key]:
+                return low
+            else:
+                return 0
+        else:
+            mid=low+high//2
+            if (key==A[mid]):
+                return mid
+            if (key<mid):
+                return binsearch(low,mid-1,key)
+            else:
+                return binsearch(mid+1,high,key)
+# this is recursive algorithm   and works with  O(log n) complexity 
+            
+            
+            
+
+
